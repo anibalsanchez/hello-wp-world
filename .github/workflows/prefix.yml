@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: Run PHP-Prefixer
         uses: PHP-Prefixer/php-prefixer-build-action@next-typescript-action
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           personal_access_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           project_id: ${{ secrets.PROJECT_ID }}
+          repository: ${{ GITHUB_REPOSITORY }}
+          token: ${{ secrets.GITHUB_TOKEN }}
