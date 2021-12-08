@@ -13,4 +13,4 @@ jobs:
           personal_access_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           project_id: ${{ secrets.PROJECT_ID }}
           repository: ${{ env.GITHUB_REPOSITORY }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_ACCESS_TOKEN }}
